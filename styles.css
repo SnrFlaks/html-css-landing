@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito";
+  position: relative;
+}
+
+.rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #ff6584;
+  z-index: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 256px;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-buttons ul {
+  display: flex;
+  list-style-type: none;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-buttons a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.nav-buttons li:first-child a {
+  font-weight: 900;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding: 0 256px;
+  z-index: 1;
+}
+
+.text {
+  flex: 1;
+}
+
+h1 {
+  margin-bottom: 0 32px;
+  font-size: 4rem;
+}
+
+p {
+  margin-bottom: 32px;
+  font-size: 1.3rem;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+}
+
+.image {
+  max-width: 40%;
+  height: auto;
+}
+
+.btn {
+  padding: 16px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #3a86ff;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #3a86ff;
+  border: 2px solid #3a86ff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 32px;
+}
+
+.social-icons img {
+  width: 72px;
+  height: 72px;
+}
+
+.social-icons .gray-bg {
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  padding: 10px;
+  width: 64px;
+  height: 64px;
+}
